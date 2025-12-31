@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dafne Codes | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+	<!-- Header / Navbar -->
+<header class="navbar">
+    <h1 class="logo">Dafne Codes</h1>
+    <nav>
+      <ul class="nav-links">
+      	<li><a href="index2.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+    
+
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        
+        .container {
+		  max-width: 1100px;
+		  margin: 60px auto;
+		  padding: 20px;
+		  display: flex;
+		  flex-direction: column; /* ✅ KEY FIX */
+		  gap: 40px;
+		}
+        
+        
+
+        /* LEFT SIDE TEXT */
+        .text-section {
+            flex: 1.2;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin: 0;
+            color: #d49a6a; /* Tan/Orange Accent */
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7em;
+            margin-top: 20px;
+            max-width: 600px;
+        }
+
+
+        /* RIGHT SIDE PHOTO */
+        .photo-section {
+            flex: 0.8;
+            text-align: right;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 860px) {
+            .container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .text-section {
+                text-align: center;
+            }
+        }
+        
+        /* SKILL GRID */
+		.skills-grid {
+		    margin-top: 30px;
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		    gap: 22px;
+		    padding: 10px 0;
+		}
+        /* Icon Styling */
+		.skill img {
+		    width: 50px;
+		    height: 50px;
+		    padding: 5px;
+		    background: #fff7f2;         /* soft warm background */
+		    border-radius: 14px;
+		    border: 1px solid #f2d8c4;   /* light tan border */
+		    object-fit: contain;
+		    transition: transform 0.25s ease;
+		}
+			
+		
+		/* SKILL CARD */
+		.skill {
+		    background: #ffffff;
+		    padding: 20px;
+		    border-radius: 18px;
+		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    gap: 12px;
+		    text-align: center;
+		    transition: transform 0.25s ease, box-shadow 0.25s ease;
+		    border: 1px solid #f0e6dd; /* soft tan border */
+		}
+		
+		/* Hover effect */
+		.skill:hover {
+		    transform: translateY(-6px);
+		    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+		    border-color: #d49a6a; /* tan/orange accent */
+		}
+		
+		/* Skill text */
+		.skill span {
+		    font-size: 0.95em;
+		    color: #5a5a5a;
+		    letter-spacing: 0.4px;
+		}
+		
+		
+		.about-layout {
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  gap: 40px;
+		}
+		        
+</style>
+
+
+<body>
+    
+    <div class="container">
+    	<div class="about-layout">
+	        <!-- LEFT SIDE TEXT -->
+	        <div class="text-section">
+	       		<h1>Dafne Lazaro</h1>
+	           
+	            <h3>Full-stack Web Developer</h3>
+	            <p>
+	                I'm a passionate web developer who enjoys building clean, modern websites 
+	                and applications. I love solving problems, learning new tools, and bringing 
+	                creative ideas to life through elegant UI/UX and efficient code.
+	            </p>
+	            
+	            <br>
+				<br>
+				
+				<h3>Education</h3>
+	
+				<p> I hold a Bachelor of Science in Computer Science with minors 
+					in Graphic Design and Mathematics from Fairfield University in Fairfield, CT. 
+					Wanting to strengthen my expertise in modern web technologies, I later completed 
+					Caltech’s Web Development Bootcamp, earning a certification in full-stack web development.
+				</p>
+				
+				<br>
+				<br>		
+	            <h3>Skills</h3>
+	            <p>By working on both course-based and personal projects, I’ve built a deep understanding of modern 
+	               web technologies, programming languages, and CI/CD processes. This continuous practice has allowed
+	               me to grow into a confident and well-rounded full-stack developer.
+	            </p>
+	         </div> 
+	           
+	        <!-- RIGHT SIDE PHOTO -->
+			<div class="photo-section">
+					<img class="profile-pic" src="../images/dafne-lazaro.jpg" alt="Profile Photo">
+					
+			</div>
+		</div>
+		
+       <!--  Skills grid section --> 	
+            
+     <div class="skills-grid">
+
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+	        <span>JavaScript</span>
+	    </div>
+		<div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+	        <span>Python</span>
+	    </div>
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+	        <span>HTML</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+	        <span>CSS</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
+	        <span>Spring Boot</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+	        <span>Angular</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+	        <span>Java</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+	        <span>TypeScript</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg">
+	        <span>Jenkins</span>
+	    </div>
+	
+	    <div class="skill">
+	        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+	        <span>Docker</span>
+	    </div>
+	
+	    <div class="skill">
+	    	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+	        <span>AWS</span>
+	    </div>
+	
+	   </div>
+	 </div> 
+</body>
+        
+
+
+<!-- Footer -->
+<footer id="contact" class="footer">
+  <p>© 2025 Dafne Lazaro. All rights reserved.</p>
+</footer>
+
+</html>
