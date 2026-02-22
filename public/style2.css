@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 10%;
-  background: #FAF8F6;
+  background:  #1E293B; /*#FAF8F6;*/  
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -40,16 +40,21 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #1E293B;
+  color:#F59E0B; /*#1E293B;*/
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #F59E0B;
+  color: #F59E0B; 
+  
 }
 
-
+.highlight {
+  background: #FDE68A;
+  padding: 0 8px;
+  border-radius: 6px;
+}
 
 /* Banner container */
 .banner {
@@ -205,11 +210,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #FAF8F6, #FFF7ED);
   text-align: center;
   padding: 0 1rem;
-  font-family: 'Poppins', sans-serif;
+  position: relative;
+
+  background-image: url("../images/laptop.jpg");
+  background-size: cover;        /* Makes it fill */
+  background-position: center;   /* Keeps it centered */
+  background-repeat: no-repeat;
 }
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
 
 .name {
   font-size: 3rem;
@@ -239,13 +261,15 @@ body {
 
 .title {
   font-size: 1.5rem;
-  color: #475569;
+  /*color: #475569;*/
+  color: white;
   margin-bottom: 1rem;
 }
 
 .tagline {
   font-size: 1.1rem;
-  color: #64748B;
+  /*color: #64748B;*/
+  color: white;
   margin-bottom: 2rem;
 }
 
@@ -278,6 +302,7 @@ body {
   border: 2px solid #ffffff; /* Optional frame color */
   
 }
+
 
 
 
