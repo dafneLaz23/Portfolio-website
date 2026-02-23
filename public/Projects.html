@@ -6,11 +6,62 @@
   <title>Dafne Codes | Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style2.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .project-text h3 {
+      margin-bottom: 1rem;
+    }
+    .project-section {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-basis: 100%;
+      margin: 20px 20px;
+    }
+
+    .information-left{
+      display: flex;
+      flex-basis: 50%;
+      border-right: 1px solid grey;
+      flex-direction: column;
+      padding: 15px;
+    }
+
+    .project-section{
+      display: flex;
+    }
+
+    .information-left h3{
+      margin-bottom: 1rem;
+      flex-basis: 50%;
+    }
+    .image-right{
+      margin: 10px 20px;
+      flex-basis: 50%;
+    }
+
+    body h2{
+      margin: 30px 50px;
+      padding: 15px;
+    }
+    #medicine-ordering-app,
+    #cab-booking-app,
+    #zumba-app
+     {
+      scroll-margin-top: 120px;
+    }
+  </style>
 </head>
 <body>
 	<!-- Header / Navbar -->
   <header class="navbar">
-    <h1 class="logo">Dafne Codes</h1>
+    <img src="../images/logo.png" alt="Dafne Codes Logo" class="logo">
     <nav>
       <ul class="nav-links">
       	<li><a href="index2.html">Home</a></li>
@@ -20,12 +71,68 @@
       </ul>
     </nav>
   </header>
-  
-  
 
+    <h2>Projects</h2>
+      <div class="project-section">
+        <section id="medicine-ordering-app" class="information-left">
+          <h3>Medicine Ordering Web App</h3>
+          <p>
+            This web application serves as an online system 
+            for ordering medications. 
+            The login screen verifies and authenticates the user, such as
+            customer or administrator, and provides different privileges. 
+            Customers can view the medicine database, add items to their cart, and submit their order through the system.
+          </p>
+          <p>Administrators can input, update, and delete medicine data through the system.</p>
+        </section>
+        <div class="image-right">
+          <div class="sp-embed-player" data-id="cOn33fn0CYK" data-aspect-ratio="1.777778" data-padding-top="56.250000%" style="position:relative;width:100%;padding-top:56.250000%;height:0;"><script src="https://go.screenpal.com/consumption/player_appearance/cOn33fn0CYK/1.777778"></script><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"  scrolling="no" src="https://go.screenpal.com/player/cOn33fn0CYK?ff=1&ahc=1&dcc=1&tl=1&bg=transparent&share=1&download=1&embed=1&cl=1" allowfullscreen="true"></iframe></div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <section id="cab-booking-app" class="information-left">
+          <h3>Cab Booking Web App</h3>
+          <p>
+            This is a simple web application for booking a cab and for calculating cab fare based on 
+            the pickup location, destination, and vehicle of choice.  
+          </p>
+          <p>A customer can input their information into the system and book their cab by clicking on the "Book a Cab" button. 
+            A confirmation notification is then displayed to the user after submitting their booking. This data is safely stored in a database
+            and can be accessed by administrators.
+          </p>
+          </section>
+        <div class="image-right">
+          <div class="sp-embed-player" data-id="cOn30sn0Cxe" data-aspect-ratio="1.777778" data-padding-top="56.250000%" style="position:relative;width:100%;padding-top:56.250000%;height:0;"><script src="https://go.screenpal.com/consumption/player_appearance/cOn30sn0Cxe/1.777778"></script><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"  scrolling="no" src="https://go.screenpal.com/player/cOn30sn0Cxe?ff=1&ahc=1&dcc=1&tl=1&bg=transparent&share=1&download=1&embed=1&cl=1" allowfullscreen="true"></iframe></div>
+
+        </div>
+      </div>
+
+      <div class="project-section">
+        <section id="zumba-app" class="information-left">
+          <h3>Zumba Class Management Web App</h3>
+          <p>Gym Solutions provides a fully functional web app made for Zumba fitness instructors to register, view and manage their students' attendance in class.
+            The administrator and/or instructor can view a list of all registered participants as well as sub divided lists of each class session. 
+            Similarly, the administrator can schedule new class times and update session information. 
+          </p>
+        </section>
+        <div class="image-right">
+          <div class="sp-embed-player" data-id="cOn0crn0CaZ" data-aspect-ratio="1.777778" data-padding-top="56.250000%" style="position:relative;width:100%;padding-top:56.250000%;height:0;"><script src="https://go.screenpal.com/consumption/player_appearance/cOn0crn0CaZ/1.777778"></script><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"  scrolling="no" src="https://go.screenpal.com/player/cOn0crn0CaZ?ff=1&ahc=1&dcc=1&tl=1&bg=transparent&share=1&download=1&embed=1&cl=1" allowfullscreen="true"></iframe></div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <div class="information-left">
+          <h3>More to Come..</h3>
+          <p></p>
+        </div>
+        <div class="image-right">
+          <img src="../images/laptop.jpg" height="100px" width="auto" alt="laptop">
+        </div>
+  </div>
   <!-- Footer -->
   <footer id="contact" class="footer">
-    <p>© 2025 Dafne Lazaro. All rights reserved.</p>
+    <p>© 2026 Dafne Lazaro. All rights reserved.</p>
   </footer>
 </body>
 </html>
