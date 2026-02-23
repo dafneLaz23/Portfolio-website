@@ -74,7 +74,7 @@ body {
   border-radius: 6px;
 }
 
-/* Banner container */
+
 .banner {
   height: 100vh;
   display: flex;
@@ -85,14 +85,13 @@ body {
   padding: 0 1rem;
 }
 
-/* Name with typewriter */
 .name {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-/* Typewriter effect */
+
 .typing {
   border-right: 3px solid #F59E0B;
   white-space: nowrap;
@@ -232,7 +231,7 @@ body {
   padding: 0 1rem;
   position: relative;
 
-  background-image: url("../images/laptop.jpg");
+  background-image: url("/images/laptop.jpg");
   background-size: cover;        /* Makes it fill */
   background-position: center;   /* Keeps it centered */
   background-repeat: no-repeat;
