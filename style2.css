@@ -231,7 +231,7 @@ body {
   padding: 0 1rem;
   position: relative;
 
-  background-image: url("/images/laptop.jpg");
+  background-image: url("images/laptop.jpg");
   background-size: cover;        /* Makes it fill */
   background-position: center;   /* Keeps it centered */
   background-repeat: no-repeat;
