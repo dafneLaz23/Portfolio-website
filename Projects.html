@@ -32,9 +32,6 @@
       padding: 15px;
     }
 
-    .project-section{
-      display: flex;
-    }
 
     .information-left h3{
       margin-bottom: 1rem;
@@ -55,6 +52,14 @@
      {
       scroll-margin-top: 120px;
     }
+    .headings{
+      margin: 50px;
+    }
+    .view-work-btn {
+      margin-top: 30px;
+      display: inline-block; /* important for spacing to behave properly */
+    }
+
   </style>
 </head>
 <body>
@@ -71,24 +76,57 @@
     </nav>
   </header>
 
-    <h2>Projects</h2>
-      <div class="project-section">
-        <section id="medicine-ordering-app" class="information-left">
-          <h3>Medicine Ordering Web App</h3>
+    <h2 class="headings">Redesigning Business Websites</h3>
+      <div class="project-section"> 
+        <section id="Bertola-Plumbing" class="information-left">
+          <h3>Bertola Plumbing and Heating</h3>
           <p>
-            This web application serves as an online system 
-            for ordering medications. 
-            The login screen verifies and authenticates the user, such as
-            customer or administrator, and provides different privileges. 
-            Customers can view the medicine database, add items to their cart, and submit their order through the system.
+            On this project, I redesigned the homepage for <span>Bertola Plumbing and Heating</span> with a focus on improving user experience and increasing lead generation. After analyzing the original website, I identified several opportunities for improvement, including a lack of clear call-to-actions, outdated visual design, and limited mobile optimization.
+
+I implemented a modern, mobile-first layout with a strong hero section, improved visual hierarchy, and strategically placed call-to-action buttons to encourage user engagement.</p>
+
+          <p>The redesign also included cleaner typography, updated imagery, and a structured services section to make information easier to scan.
+
+Overall, the goal of this project was to transform the website into a more professional, trustworthy, and conversion-focused experience that better reflects the quality of the business and drives more customer inquiries.
+
           </p>
-          <p>Administrators can input, update, and delete medicine data through the system.</p>
+          
         </section>
         <div class="image-right">
-          <div class="sp-embed-player" data-id="cOn33fn0CYK" data-aspect-ratio="1.777778" data-padding-top="56.250000%" style="position:relative;width:100%;padding-top:56.250000%;height:0;"><script src="https://go.screenpal.com/consumption/player_appearance/cOn33fn0CYK/1.777778"></script><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"  scrolling="no" src="https://go.screenpal.com/player/cOn33fn0CYK?ff=1&ahc=1&dcc=1&tl=1&bg=transparent&share=1&download=1&embed=1&cl=1" allowfullscreen="true"></iframe></div>
+          <a href="bertola-plumbing.html" class="view-work-btn btn">View My Work</a>
         </div>
       </div>
-
+      <div class="project-section">
+        <div class="information-left">
+          <h3>Example Company Website </h3>
+          <p>By clicking on the button, you will be taken to an example website that I have designed and built to promote a 
+            web development company.</p>
+          <br>
+          <p>**Note: Everything on the webpage is fictional**</p>
+          
+        </div>
+        <div class="image-right">
+          <a href="example-website.html" class="view-work-btn btn">View My Work</a>
+        </div>
+      </div>
+        <h2 class="headings">Web Applications</h3>
+        <div class="project-section">
+          <section id="medicine-ordering-app" class="information-left">
+            <h3>Medicine Ordering Web App</h3>
+            <p>
+              This web application serves as an online system 
+              for ordering medications. 
+              The login screen verifies and authenticates the user, such as
+              customer or administrator, and provides different privileges. 
+              Customers can view the medicine database, add items to their cart, and submit their order through the system.
+            </p>
+            <p>Administrators can input, update, and delete medicine data through the system.</p>
+          </section>
+          <div class="image-right">
+            <div class="sp-embed-player" data-id="cOn33fn0CYK" data-aspect-ratio="1.777778" data-padding-top="56.250000%" style="position:relative;width:100%;padding-top:56.250000%;height:0;"><script src="https://go.screenpal.com/consumption/player_appearance/cOn33fn0CYK/1.777778"></script><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"  scrolling="no" src="https://go.screenpal.com/player/cOn33fn0CYK?ff=1&ahc=1&dcc=1&tl=1&bg=transparent&share=1&download=1&embed=1&cl=1" allowfullscreen="true"></iframe></div>
+          </div>
+        </div>
+      
       <div class="project-section">
         <section id="cab-booking-app" class="information-left">
           <h3>Cab Booking Web App</h3>
@@ -120,19 +158,7 @@
         </div>
       </div>
 
-      <div class="project-section">
-        <div class="information-left">
-          <h3>Example Company Website </h3>
-          <p>By clicking on the button, you will be taken to an example website that I have designed and built to promote a 
-            web development company.</p>
-          <br>
-          <p>**Note: Everything on the webpage is fictional**</p>
-          
-        </div>
-        <div class="image-right">
-          <a href="example-website.html" class="btn">View My Work</a>
-        </div>
-  </div>
+      
   <!-- Footer -->
   <footer id="contact" class="footer">
     <p>© 2026 Dafne Lazaro. All rights reserved.</p>
